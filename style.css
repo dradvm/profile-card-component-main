@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+.profile {
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Darkcyan);
+}
+.profile>img {
+    position: absolute;
+    width: 67%;
+}
+.profile>img:first-child {
+    top: -70%;
+    left: -18%;
+}
+.profile>img:last-child {
+    bottom: -88%;
+    right: -11%;
+}
+.profile__container {
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.profile__img {
+
+}
+.profile__content {
+    position: relative;
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.profile__user {
+    position: absolute;
+    top: -25%;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profile__name {
+    display: flex;
+    font-weight: 700;
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 18px;
+    padding: 8px 0px;
+}
+.profile__name p {
+    margin-left: 8px;
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+}
+.profile__address {
+    font-size: 14px;
+}
+.profile__infomations {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 32px;
+    padding: 24px 0px;
+    border-top: 1px solid rgba(150,150,150,.3);
+}
+.profile__informations__item {
+
+}
+.profile__informations__item__value {
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.profile__informations__item__name {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 4px
+}
+.profile__address,
+.profile__informations__item__name {
+    color: var(--Darkgrayishblue);
+}
+
+@media (max-width: 1023px){
+    .profile > img {
+        width: 100%;
+    }
+    .profile > img:first-child {
+        top: -25%;
+        left: -55%;
+    }
+    .profile > img:last-child {
+        bottom: -25%;
+        right: -55%;
+    }
+    .profile__img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 739px) {
+    .profile__container {
+        width: 90%;
+    }
+}
